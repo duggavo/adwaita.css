@@ -1,0 +1,82 @@
+:root {
+	--light2: #f6f5f4;
+	--light4: #c0bfbc;
+	--dark1: #77767b;
+	--dark2: #5E5C64;
+	--dark3: #3f3f3f;
+	--dark4: #373737;
+	--dark5: #2c2c2c;
+	--dark6: #191919;
+	--main1: #ffbe6f;
+	--main2: #ffa348;
+	--main3: #ff7800;
+	--main4: #E66100;
+	--main5: #C64600;
+	--text: #353535;
+}
+* {
+	font-family: "Ubuntu", "Cantarell", "Calibri", "Arial";
+	font-size: 15px;
+	color: var(--text);
+}
+h1, h2, h3, h4, h5 {
+	font-weight: bold;
+	color: black;
+}
+h1 {
+	font-size: 26px;
+}
+h2 {
+	font-size: 21px;
+}
+input[type=text] {
+	padding: 0px;
+}
+button, input[type=text], textarea, select {
+	border: 1px solid var(--light4);
+	border-radius: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 34px;
+	min-width: 210px;
+	background-color: white;
+}
+button:hover {
+	background-color: var(--light2);
+}
+button:active {
+	background-color: var(--light4);
+}
+input[type=text], textarea, button {
+	outline: none;
+	margin: 2px;
+}
+input[type=text]:focus, button:focus {
+	border: 2px solid var(--main2);
+	margin: 1px;
+}
+button:focus {
+	margin: 2px;
+}
+@media (prefers-color-scheme: dark) {
+	* {
+		background-color: var(--dark5);
+		color: white;
+	}
+	h1, h2, h3, h4, h5 {
+		color: white;
+	}
+	button, input[type="text"], textarea, select {
+		background-color: var(--dark4);
+		border-color: var(--dark6);
+	}
+	input[type=text]:focus, button:focus {
+		border-color: var(--main4);
+	}
+	button:hover {
+		background-color: var(--dark3);
+	}
+	button:active {
+		background-color: var(--dark6);
+	}
+}
